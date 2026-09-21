@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Store - Developed by Shivam</title>
+    <style>
+        body {
+            background-color: #000000; /* OLED Black */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #00e5ff; /* Neon Cyan Music Title */
+            margin-top: 30px;
+            font-size: 34px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .developer-tag {
+            color: #00ff66; /* Neon Green Branding */
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        /* 🎧 गानों के डिब्बे (Song Card) का प्रीमियम डिज़ाइन */
+        .song-card {
+            background-color: #111111;
+            border: 1px solid #222222;
+            border-radius: 16px;
+            padding: 20px;
+            margin: 25px auto;
+            max-width: 360px;
+            box-shadow: 0 4px 15px rgba(0, 229, 255, 0.04);
+        }
+        .song-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px 0;
+            color: #ffffff;
+        }
+        .artist-name {
+            color: #00e5ff; /* Singer Name in Cyan */
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        /* इन-बिल्ट ऑडियो प्लेयर का स्टाइल */
+        audio {
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        /* चमकीला स्यान डाउनलोड बटन */
+        .download-btn {
+            background-color: #00e5ff;
+            color: #000000;
+            padding: 10px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 15px;
+        }
+        
+        /* कॉन्टैक्ट इन्फो (Footer) का डिजाइन */
+        .footer-section {
+            background-color: #111111;
+            border-top: 2px solid #222222;
+            padding: 25px 15px;
+            margin-top: 60px;
+            border-radius: 12px 12px 0 0;
+        }
+        .footer-title {
+            color: #00e5ff;
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .info-text {
+            color: #ffffff;
+            margin: 12px 0;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .contact-mail {
+            color: #aaaaaa;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. वेबसाइट का नाम -->
+    <h1>My Music Store</h1>
+    
+    <!-- 2. तुम्हारी ब्रांडिंग -->
+    <div class="developer-tag">Developed by Shivam</div>
+    <!-- ==================================================== -->
+    <!-- 🌟 यहाँ से तुम्हारे 15 नए खाली गानों के डिब्बे शुरू होते हैं 🌟 -->
+    <!-- ==================================================== -->
+
+    <!-- NEW BOX 1 -->
+    <div class="song-card">
+        <div class="song-title"> GODWA LA GODANWA</div>
+        <div class="artist-name">DEVA LAL YADAV</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1a0cPHYVjOTikeFv27PRTLyhv2t9mN1EE/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1a0cPHYVjOTikeFv27PRTLyhv2t9mN1EE/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 2 -->
+    <div class="song-card">
+        <div class="song-title">mujhe tum yaad ate ho </div>
+        <div class="artist-name">By kumar sanu</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1N1nfBZAYg8hYZbijtb1R6Gn4wCUeQ3Z9/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1N1nfBZAYg8hYZbijtb1R6Gn4wCUeQ3Z9/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 3 -->
+    <div class="song-card">
+        <div class="song-title">kaas tu mila hota</div>
+        <div class="artist-name">By jubin natuliya</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1cCn6Id1UGc1IrWKjrvvCxWeyP_hNuNfM/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1cCn6Id1UGc1IrWKjrvvCxWeyP_hNuNfM/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 4 -->
+    <div class="song-card">
+        <div class="song-title">YE PIYA DARU KE KARANWA</div>
+        <div class="artist-name">By MINAKSHI RAJ</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1LHkceU3dtsmRdgvZVxw95R5FMbtDXT3L/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1LHkceU3dtsmRdgvZVxw95R5FMbtDXT3L/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 5 -->
+    <div class="song-card">
+        <div class="song-title">patar patar oth lalipop</div>
+        <div class="artist-name">By deva</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1Yyh__DYXVldFXeALJAAvQ1yZThzge5ZN/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1Yyh__DYXVldFXeALJAAvQ1yZThzge5ZN/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 6 -->
+    <div class="song-card">
+        <div class="song-title">PHALANA BO FHARAR BHAILI</div>
+        <div class="artist-name">By PAWAN SINGH</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1AS3yX2QfC09g_NW8sZ_0VXlYDK5fjuau/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1AS3yX2QfC09g_NW8sZ_0VXlYDK5fjuau/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 7 -->
+    <div class="song-card">
+        <div class="song-title">PYAR KE BANDHAN </div>
+        <div class="artist-name">By PRADIP PANDE CHINTU </div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1ZwkYmU02b6wvgdkprZ6og69lJHZVycSz/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1ZwkYmU02b6wvgdkprZ6og69lJHZVycSz/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 8 -->
+    <div class="song-card">
+        <div class="song-title">ROYI NA JO YAAD MERI AYI RE </div>
+        <div class="artist-name">By SAIF ALI KHAN</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1nb5b6OtadKPC8GW1-gmR-sO31Vvmi13s/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1nb5b6OtadKPC8GW1-gmR-sO31Vvmi13s/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 9 -->
+    <div class="song-card">
+        <div class="song-title">CHOLI SE SAAF KARE </div>
+        <div class="artist-name">By DIMESH LAL YADAV </div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1EUQ2xrVf1hbOleFc-6WP9bWQ1-9rV_HS/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1EUQ2xrVf1hbOleFc-6WP9bWQ1-9rV_HS/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 10 -->
+    <div class="song-card">
+        <div class="song-title">PARDESHI POYWA TOHAR</div>
+        <div class="artist-name">By PAWAN SINGH</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1nExXoCRWIXMlzhxpmy1n9m8SbcCftQEO/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1nExXoCRWIXMlzhxpmy1n9m8SbcCftQEO/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 11 -->
+    <div class="song-card">
+        <div class="song-title">TU JO HAS HAS KE SANAM </div>
+        <div class="artist-name">By UDIT NARAYAN</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1qagRRTj9F9SvMGsORhI6uTYqZgt443WX/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1qagRRTj9F9SvMGsORhI6uTYqZgt443WX/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 12 -->
+    <div class="song-card">
+        <div class="song-title">SUN MERI BAAT</div>
+        <div class="artist-name">INSTA VIRAL SONG</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1dFEPl5PFjy4XrWkxEDH1m4n15iAJBXnR/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1dFEPl5PFjy4XrWkxEDH1m4n15iAJBXnR/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 13 -->
+    <div class="song-card">
+        <div class="song-title">TUMHE DILLAGI BHULJANI PADEGI</div>
+        <div class="artist-name">By NUSRAT FATEH ALI KHAN</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1MX99aVa-bZ3vUJexnHuMPRj21CYBnXjs/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1MX99aVa-bZ3vUJexnHuMPRj21CYBnXjs/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 14 -->
+    <div class="song-card">
+        <div class="song-title">O DIL TOD KE</div>
+        <div class="artist-name">By KISHOR KUMAR </div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/17NR4s1u6GueKSGOti1Ob2143ctQfzKQ3/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/17NR4s1u6GueKSGOti1Ob2143ctQfzKQ3/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- NEW BOX 15 -->
+    <div class="song-card">
+        <div class="song-title">SAB KUCHH BHULA DIYA </div>
+        <div class="artist-name">By sanu nigam</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1a8Tnvs9pWaXWJ_O8WZnvSBsD5soV9B7R/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1a8Tnvs9pWaXWJ_O8WZnvSBsD5soV9B7R/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- ==================================================== -->
+    <!-- ⬆️ नए 15 डिब्बे खत्म, इसके नीचे तुम्हारे पुराने 10 डिब्बे रहेंगे ⬆️ -->
+    <!-- ==================================================== -->
+
+
+    <!-- 3. गानों की गैलरी (10 Premium Song Boxes) -->
+
+    <!-- BOX 1: ओढ़नी पे बोल देती धावा -->
+    <div class="song-card">
+        <div class="song-title">ओढ़नी पे बोल देती धावा</div>
+        <div class="artist-name">By Khesari Lal Yadav</div>
+        <audio controls>
+            <source src="https://google.com" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1cFe6nVDgKbca1ZK6dXuEFgupFRBPgjX0/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- BOX 2: मेरे महबूब कयामत होगी -->
+    <div class="song-card">
+        <div class="song-title">मेरे महबूब कयामत होगी</div>
+        <div class="artist-name">By Kishore Kumar</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1umboOGRzfRq9N0A8P-EOJGbwwSu9V2bX/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1umboOGRzfRq9N0A8P-EOJGbwwSu9V2bX/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- BOX 3: मत कर इतना गुरूर -->
+    <div class="song-card">
+        <div class="song-title">मत कर इतना गुरूर</div>
+        <div class="artist-name">By Sonu Nigam</div>
+        <audio controls>
+            <source src="https://google.com" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1Y_TbcUJXMbnZa9NT9jUF2Hat0IwdbtRW/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- BOX 4: बहुत देर करदी -->
+    <div class="song-card">
+        <div class="song-title">बहुत देर करदी</div>
+        <div class="artist-name">By Asha Bhosle</div>
+        <audio controls>
+            <source src="https://google.com_" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/13FSb0rIH2Main9GMja1vq-zHwoWpiV2_/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- BOX 5: भटकते भटकते न जाने कहा से -->
+    <div class="song-card">
+        <div class="song-title">भटकते भटकते न जाने कहा से</div>
+        <div class="artist-name">By Sonu Raj</div>
+        <audio controls>
+            <source src="https://google.com" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/15ZzJbJDhZd3xgpNNEjvyz_a9NFZRVFkj/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- BOX 6: मरवाव जाके सबसे -->
+    <div class="song-card">
+        <div class="song-title">मरवाव जाके सबसे</div>
+        <div class="artist-name">By Unknown Artist</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1VF420cVJX3k_TzBVelu7fTJ-jD9g54u1/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1VF420cVJX3k_TzBVelu7fTJ-jD9g54u1/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- BOX 7: पटरी कमरिया -->
+    <div class="song-card">
+        <div class="song-title">पटरी कमरिया</div>
+        <div class="artist-name">By Sonu Rajbhar</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1sxDC9NSyMzMdoDd7Ob9jAKDnFgvcanvE/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1sxDC9NSyMzMdoDd7Ob9jAKDnFgvcanvE/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- BOX 8: डबल खिड़की -->
+    <div class="song-card">
+        <div class="song-title">डबल खिड़की</div>
+        <div class="artist-name">By Khesari Lal Yadav</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1ptGmbPlZB1feRYgOrMSiTWujv8jtOZrm/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1ptGmbPlZB1feRYgOrMSiTWujv8jtOZrm/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- BOX 9: याद तोहार सतावे -->
+    <div class="song-card">
+        <div class="song-title">याद तोहार सतावे</div>
+        <div class="artist-name">By Pawan Singh</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1PJb1O95HLHq_05ZSX6Kr7NybS6cxBg1h/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1PJb1O95HLHq_05ZSX6Kr7NybS6cxBg1h/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- BOX 10: गंगा मैया दिहलु उजाड़ -->
+    <div class="song-card">
+        <div class="song-title">गंगा मैया दिहलु उजाड़</div>
+        <div class="artist-name">By Vinay Tiwari</div>
+        <audio controls>
+            <source src="https://drive.google.com/file/d/1DMEm1y2TWwri6TccSVL-OQWjRWL4UQeZ/view?usp=drivesdk" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="https://drive.google.com/file/d/1DMEm1y2TWwri6TccSVL-OQWjRWL4UQeZ/view?usp=drivesdk" class="download-btn">DOWNLOAD MP3</a>
+    </div>
+
+    <!-- 4. तुम्हारा कॉन्टैक्ट इन्फो (Footer) -->
+    <div class="footer-section">
+        <div class="footer-title">CONTACT & FOLLOW INFO</div>
+        <div class="info-text">📸 Instagram: _purvanchal_ff_10k</div>
+        <div class="info-text">🎥 YouTube: @sf.shivambhai</div>
+        <div class="contact-mail">📧 Business Email: shivamyadavpaki99@gmail.com</div>
+    </div>
+
+</body>
+</html>
